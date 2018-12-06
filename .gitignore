@@ -1,0 +1,6 @@
+## BEFORE MODIFYING THIS FILE, READ http://git-scm.com/docs/gitignore
+### THERE WAS A BUNCH OF UNEXPECTED BEHAVIOR HERE
+
+# Across all files and directories
+.idea/
+out/
