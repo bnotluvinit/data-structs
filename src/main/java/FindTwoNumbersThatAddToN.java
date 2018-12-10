@@ -9,7 +9,7 @@ class FindTwoNumbersThatAddToN {
         int pointer1 = 0;
         int pointer2 = arr.length - 1;
         int[] result = new int[2];
-        int sum = 0;
+        int sum;
 
         while (pointer1 != pointer2) {
             sum = arr[pointer1] + arr[pointer2];
