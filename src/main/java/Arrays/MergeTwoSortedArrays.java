@@ -1,3 +1,5 @@
+package Arrays;
+
 public class MergeTwoSortedArrays {
     public static int[] mergeArrays(int[] arr1, int[] arr2) {
 

@@ -1,3 +1,6 @@
+package Arrays;
+
+import Arrays.FindNonRepeatingValue;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,3 +1,6 @@
+package Arrays;
+
+import Arrays.FindProductArray;
 import org.junit.Assert;
 import org.junit.Test;
 

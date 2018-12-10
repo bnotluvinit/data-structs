@@ -1,3 +1,5 @@
+package Arrays;
+
 class CheckRemoveEven {
     static int[] removeEven(int[] arr) {
         int odd_numbers = 0;

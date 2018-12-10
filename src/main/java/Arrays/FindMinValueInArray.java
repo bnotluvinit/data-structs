@@ -1,3 +1,5 @@
+package Arrays;
+
 class FindMinValueInArray {
 
     static int findMinValue(int[] arr) {

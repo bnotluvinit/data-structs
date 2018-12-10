@@ -1,3 +1,5 @@
+package Arrays;
+
 class FindProductArray {
     static int[] findProduct(int[] arr) {
 

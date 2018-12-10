@@ -1,3 +1,5 @@
+package Arrays;
+
 public class FindNonRepeatingValue {
     static int findNonRepeating(int[] arr) {
 
