@@ -18,6 +18,18 @@ public class LinkedList {
         tail = node;
     }
 
+
+    public int length() {
+        int count = 0;
+        Node current = this.head;
+
+        while(current !=null){
+            count++;
+            current = current.next();
+        }
+        return count;
+    }
+
     public static class Node {
         private Node next;
         private String data;
