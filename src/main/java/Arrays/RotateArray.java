@@ -9,5 +9,4 @@ public class RotateArray {
         }
         arr[0] = last;
     }
-
 }
