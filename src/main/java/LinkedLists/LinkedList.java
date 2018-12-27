@@ -31,8 +31,8 @@ public class LinkedList {
     }
 
     public static class Node {
-        private Node next;
-        private String data;
+        public Node next;
+        public String data;
 
         public Node(String data) {
             this.data = data;
