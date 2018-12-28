@@ -2,31 +2,31 @@ package Misc;
 
 import java.util.HashMap;
 
-class Entry {
+class Node {
     int value;
     int key;
-    Entry left;
-    Entry right;
+    Node left;
+    Node right;
 }
 
 public class LRUCache {
 
-    HashMap<Integer, Entry> hashmap;
-    Entry start, end;
+    HashMap<Integer, Node> hashmap;
+    Node start, end;
     int LRU_SIZE = 4; // Here i am setting 4 to test the LRU cache
 
     // implementation, it can make be dynamic
     public LRUCache() {
-        hashmap = new HashMap<Integer, Entry>();
+        hashmap = new HashMap<Integer, Node>();
     }
 
     public int getEntry(int key) {
         if (hashmap.containsKey(key)) // Key Already Exist, just update the
         {
-            Entry entry = hashmap.get(key);
-            removeNode(entry);
-            addAtTop(entry);
-            return entry.value;
+            Node node = hashmap.get(key);
+            removeNode(node);
+            addAtTop(node);
+            return node.value;
         }
         return -1;
     }
@@ -34,12 +34,12 @@ public class LRUCache {
     public void putEntry(int key, int value) {
         if (hashmap.containsKey(key)) // Key Already Exist, just update the value and move it to top
         {
-            Entry entry = hashmap.get(key);
-            entry.value = value;
-            removeNode(entry);
-            addAtTop(entry);
+            Node node = hashmap.get(key);
+            node.value = value;
+            removeNode(node);
+            addAtTop(node);
         } else {
-            Entry newnode = new Entry();
+            Node newnode = new Node();
             newnode.left = null;
             newnode.right = null;
             newnode.value = value;
@@ -58,7 +58,7 @@ public class LRUCache {
         }
     }
 
-    public void addAtTop(Entry node) {
+    public void addAtTop(Node node) {
         node.right = start;
         node.left = null;
         if (start != null)
@@ -68,7 +68,7 @@ public class LRUCache {
             end = start;
     }
 
-    public void removeNode(Entry node) {
+    public void removeNode(Node node) {
 
         if (node.left != null) {
             node.left.right = node.right;
