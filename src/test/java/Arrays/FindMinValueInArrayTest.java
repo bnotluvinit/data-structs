@@ -10,6 +10,6 @@ public class FindMinValueInArrayTest {
 
         int result = FindMinValueInArray.findMinValue(arr);
 
-        Assert.assertEquals(2, result);
+        Assert.assertEquals(1, result);
     }
 }
