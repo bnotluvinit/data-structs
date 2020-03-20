@@ -3,8 +3,8 @@ package Strings;
 
 import java.util.Arrays;
 
-public class Anagram {
-    public static Boolean isAnagram(String word, String anagram) {
+    class Anagram {
+    static Boolean isAnagram(String word, String anagram) {
         if (word.length() != anagram.length()) {
             return false;
         }
